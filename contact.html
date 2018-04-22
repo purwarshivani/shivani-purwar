@@ -1,0 +1,98 @@
+
+	<html>
+<head><title>index</title>
+	<link rel="stylesheet" href ="main.css" >
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	
+	
+</head>
+<body>
+	
+	
+<header class="header">
+	<div class="header-first">
+		<div class="header-first-first"><h1>Shivani purwar <br>IT Student/NAMI Collage</h1></div>
+		
+	</div>
+	
+	<div class="header-second">
+	<div id="mySidenav" class="Sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="index.html">Home</a>
+		<a href="contact.html">Contact</a>
+		<a href="Aboutme.html">About me</a>
+		<a href="cv.html">CV</a>
+		<a href="social.html">Social</a>
+	</div>
+		<div class="hamburger" style="font-size:40px;cursor: pointer"onclick="openNav()">&#9776;</div>
+
+		<script>
+			function openNav() {
+				document.getElementById("mySidenav").style.width="100%";
+			}
+			function closeNav() {
+				document.getElementById("mySidenav").style.width="0";
+
+				
+			}
+		</script>
+
+	</div>
+	
+</header>
+<section class="section">
+	
+	<div class="container">
+		<div class="label">
+		
+	   	<h2>contact</h2>
+	   </div>
+	 
+	       <div class="column">
+	  <form method="post" onsubmit="return validateform(this);">
+		First name;
+		<input class="input1" type="text" name="firstname">
+		<br>
+		Last name:
+		<input type="text" class="input1" name="lastname"><br>
+		<br>
+
+		<input type="radio" name="gender" value="male" >Male<br>
+		<input type="radio" name="gender" value="female">Female<br>
+		<input type="radio" name="gender" value="other" checked>Other<br>
+		<br>
+		Email address :
+		<input type="text" class="input1" name="email"><br>
+		
+		Your feedback:<br>
+		<textarea name="message" class="input1" rows="7" cols="50"></textarea><br>
+		<button type="submit" value="Submit">Submit</button>
+
+	   </form>
+	 </div>
+	</div>
+
+
+
+
+
+
+
+<div class="sect">
+	
+	
+<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14128.02789405721!2d85.3178601699999!3d27.71707096421431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1524081799080" width="400" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+
+
+</div>
+</section>
+
+<footer class="footer">
+<div class="footer-first">shivaniporwal558@gmail.com</div>
+<div class="footer-second">+9779803950985</div>
+<div class="footer-third">@copyright</div>
+</footer>
+
+</body>
+</html>
