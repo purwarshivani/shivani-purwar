@@ -1,1 +1,76 @@
 
+import java.awt.Container;
+import java.awt.Dimension;
+import java.awt.FlowLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+public class Call extends JFrame implements ActionListener {
+	private JPanel panel;
+	private JButton button;
+	private JLabel label1;
+	private JTextField text;
+	public static void main(String[] args) {
+		Call frame=new Call();
+		frame.setSize(350,300);
+		frame.createGUI();
+		frame.setVisible(true);
+		
+	}
+	
+	
+	
+	private void createGUI() {
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		Container window=getContentPane();
+		window.setLayout(new FlowLayout());
+		
+		panel=new JPanel();
+		panel.setPreferredSize(new Dimension(300,200));
+		window.add(panel);
+		
+		button=new JButton(" click here");
+		window.add(button);
+		button.addActionListener(this);
+		
+		label1=new JLabel("your name");
+		window.add(label1);
+		
+		text=new JTextField(10);
+		window.add(text);
+		
+		
+		
+	}
+		
+	
+
+private void showName(String name) {
+	JOptionPane.showMessageDialog(null, "enter your name"+ name);
+}
+
+
+
+
+
+
+
+
+
+
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		String name= JOptionPane.showInputDialog("enter your name");
+		showName(name);
+	}
+
+}
